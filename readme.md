@@ -1,12 +1,10 @@
-# 离线实时语音识别安卓APP - onlineAsrShepaOnnx分支
+# 情感分析PP - asr 分支
 
-目前本分支已实现实时语音识别功能，但采用的推理框架为: Sherpa-onnx,且调用的是晓龙Gen3芯片的CPU进行推理，而非NPU
-
-### 0. 输出Apk:
-    本分支项目构建后输出的apk为项目目录下的 asrAgent.apk 文件
+目前本分支已实现实时语音识别功能，但采用的推理框架为: Sherpa-onnx,且调用的是晓龙CPU芯片的进行推理，而非NPU
 
 ### 1.APP效果:
-    目前本分支部署的是  main/assets/sherpa-onnx-streaming-paraformer-bilingual-zh-en 下的模型，此模型参数量为230MB左右，其是在线模型，为实时模型，实时语音识别能力较强
+    目前本分支部署的是  main/assets/sherpa-onnx-streaming-paraformer-bilingual-zh-en 下的模型，此模型参数量为230MB左右，其是在线模型，为实时模型，实时语音识别能力较强.
+    进入软件界面后,按下start键即可开始实时的语音识别并显示到文本界面.按下 stop 键即可清空文本界面,再次按下start则再次重复.
 
 ### 2.基于的模型:
     说明: 此分支基于的模型是阿里达摩院开源的基于Paraformer架构的中英文语音识别模型，其为实时语音识别模型
@@ -19,4 +17,4 @@
 
 
 ### 4. 项目使用教程:
-    本分支下已有 app-debug.apk ，可直接使用。若要构建运行完整的项目，可能需要使用  git lfs pull 拉取被lfs追踪的文件(Android Studio可能会自动使用 lfs 拉取，若没自动拉取需要用户手动拉取),具体被追踪的文件可查看 .gitattributes 文件内容 
+    可直接使用。若要构建运行完整的项目，可能需要使用  git lfs pull 拉取被lfs追踪的文件(Android Studio可能会自动使用 lfs 拉取，若没自动拉取需要用户手动拉取),具体被追踪的文件可查看 .gitattributes 文件内容 
