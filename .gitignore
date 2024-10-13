@@ -13,4 +13,9 @@
 .externalNativeBuild
 .cxx
 local.properties
-/app/build
+/app/build/*
+/app/src/androidTest/*
+/app/src/backup
+/app/src/test
+/app/src/main/jniLibs/x86_64/*
+/app/src/main/assets/sherpa-onnx-streaming-paraformer-bilingual-zh-en/*
