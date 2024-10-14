@@ -18,4 +18,3 @@ local.properties
 /app/src/backup
 /app/src/test
 /app/src/main/jniLibs/x86_64/*
-/app/src/main/assets/sherpa-onnx-streaming-paraformer-bilingual-zh-en/*
